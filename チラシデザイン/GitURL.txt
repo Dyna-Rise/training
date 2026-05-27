@@ -1,0 +1,5 @@
+吉田さんGitURL
+https://github.com/Yoshida836/training
+
+高橋さんGitURL
+https://github.com/yutaka793/training
