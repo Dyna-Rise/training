@@ -3,6 +3,77 @@ header{
     background: #000;
 }
 
+h1{
+    /* 文字色 */
+    color: #fff;
+    /* 文字ぞろえを中央に */
+    text-align: center;
+}
+
+img{
+    /* 幅 */
+    width: 100%;
+    /* 高さ */
+    height: 240px;
+    /* 写真をいい感じにトリミング */
+    object-fit: cover;
+}
+
+main{
+    width: 600px;
+    /* background: #ff0; */
+
+    /* 余白margin */
+    /* 左と右の余白をいい感じに整える */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background: #005;
+    /* 内側の余白 */
+    padding:40px;
+}
+
+footer h2{
+    color: #fff;
+    text-align: center;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
+
+div{
+    background: #ddd;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+/* idを探すときは#をつける */
+#blue{
+    background: #ddf;
+}
+
+#pink{
+    background: #fdd;
+}
+
+#yellow{
+    background: #ffd;
+}
+
+/* classを探すときは.をつける */
+.emp{
+    /* 枠線で囲む */
+    border: 1px solid #000;
+    /* 太さ・線の種類・色 */
+
+    width: 80px;
+    padding: 8px;
+    text-align: center;
+}
 
 /* カラーコード */
 /* ＃から始まる6桁コード
