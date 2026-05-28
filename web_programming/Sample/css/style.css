@@ -3,6 +3,11 @@ header{
     background: #000;
 }
 
+header p{
+    color: #fff;
+    text-align: center;
+}
+
 h1{
     /* 文字色 */
     color: #fff;
@@ -46,7 +51,7 @@ footer p{
 }
 
 div{
-    background: #ddd;
+    /* background: #ddd; */
     padding: 16px;
     margin-bottom: 10px;
 }
@@ -74,6 +79,7 @@ div{
     padding: 8px;
     text-align: center;
 }
+
 
 /* カラーコード */
 /* ＃から始まる6桁コード
