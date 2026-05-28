@@ -1,0 +1,29 @@
+h1{
+    /* 文字色 */
+    color: gray;
+    /* 文字揃え */
+    text-align: center;
+    /* 文字の大きさ */
+    font-size: 64px;
+}
+
+img{
+    /* 幅 */
+    width: 640px;
+    /* 縦 */
+    height: 640px;
+    /* 画像の比率の自動調整 */
+    object-fit: cover;
+}
+
+.inner{
+    max-width: 800px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background: white;
+}
+
+body{
+    background: gray;
+}
