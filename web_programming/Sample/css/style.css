@@ -94,3 +94,23 @@ aabbcc⇒abc
 ff55dd⇒f5d
 000000⇒000
 ffffff⇒fff */
+
+
+/* Canvasセクションのスタイル */
+.canvas-section {
+    background: #eef;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.canvas-section h3 {
+    margin-bottom: 15px;
+}
+
+.canvas-section button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

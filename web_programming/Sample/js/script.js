@@ -42,6 +42,34 @@ for (let i = 0; i < 3; i++) {
     starEle1.appendChild(addCnt);
 }
 
+
+// idがstars2である要素(div)の情報を変数starEle2に覚えておいてもらう
+let starEle2 = document.getElementById("stars2");
+
+//繰り返し星を生成する
+for (let i = 0; i < 3; i++) {
+    //spanというタグを生成し、そのテキストの中身は☆とする
+    let addCnt = document.createElement("span");
+    addCnt.textContent = "☆";
+
+    //特定しておいた場所starEle1に生成したspanを足す
+    starEle2.appendChild(addCnt);
+}
+
+// idがstars3である要素(div)の情報を変数starEle3に覚えておいてもらう
+let starEle3 = document.getElementById("stars3");
+
+//繰り返し星を生成する
+for (let i = 0; i < 3; i++) {
+    //spanというタグを生成し、そのテキストの中身は☆とする
+    let addCnt = document.createElement("span");
+    addCnt.textContent = "☆";
+
+    //特定しておいた場所starEle1に生成したspanを足す
+    starEle3.appendChild(addCnt);
+}
+
+
 //数の大きい・小さいの比較の記号
 // a < 5 ⇒ aは5より小さい（未満）
 // a <= 5 ⇒ aは5以下
@@ -52,3 +80,46 @@ for (let i = 0; i < 3; i++) {
 // a != 5 ⇒ aは5とは異なる
 
 // ※「=」は代入演算子 A = B ：Bの結果をAに入れる
+
+
+
+// Canvas要素を取得
+const canvas = document.getElementById('myCanvas');
+// 2D描画コンテキストを取得
+const ctx = canvas.getContext('2d');
+
+// Canvasにテキストを描画する関数
+function drawCanvasText(text) {
+    // Canvasをクリア
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // フォントスタイルを設定
+    ctx.font = '30px Arial';
+    // テキストの色を設定
+    ctx.fillStyle = '#333';
+    // テキストの位置を中央揃えに
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+
+    // テキストを描画
+    // fillText(テキストの内容, x座標, y座標)
+    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+}
+
+// ページ読み込み時にCanvasに初期メッセージを描画
+drawCanvasText("今日の目標はコレ！");
+
+// ボタンがクリックされた時の処理
+const updateButton = document.getElementById('updateCanvasText');
+updateButton.addEventListener('click', () => {
+    // 例として、ランダムなメッセージを表示
+    const messages = [
+        "新しいことに挑戦しよう！",
+        "一歩ずつ進もう！",
+        "楽しく学習しよう！",
+        "諦めずに頑張ろう！",
+        "プログラミングは楽しい！"
+    ];
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    drawCanvasText(messages[randomIndex]);
+});
