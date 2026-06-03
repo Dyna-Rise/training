@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript初心者演習 - Canvas編</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>CanvasでJavaScriptを学ぼう！</h1>
+        <p>変数、条件分岐、繰り返しを使って、キャンバスに絵を描いてみよう。</p>
+    </header>
+
+    <main>
+        <section class="exercise-section">
+            <h2>問題1: 変数を使って図形を描こう</h2>
+            <p>以下のキャンバスに、指定された位置と大きさで四角形を描いてみましょう。**変数を使って**、四角形の色や位置を設定してください。</p>
+            <canvas id="canvas1" width="400" height="200"></canvas>
+            <div class="hint">
+                <h3>ヒント</h3>
+                <ul>
+                    <li><code>getContext('2d')</code>で描画コンテキストを取得します。</li>
+                    <li><code>ctx.fillStyle = "色";</code>で塗りつぶしの色を設定します。</li>
+                    <li><code>ctx.fillRect(x, y, 幅, 高さ);</code>で四角形を描画します。</li>
+                    <li><code>let 変数名 = 値;</code>で変数を宣言できます。</li>
+                </ul>
+            </div>
+            <button onclick="executeExercise1()">問題1を実行</button>
+            <p id="result1" class="result"></p>
+        </section>
+
+        <section class="exercise-section">
+            <h2>問題2: 条件分岐で色を変えよう</h2>
+            <p>以下のキャンバスに、ランダムな色の円を描いてみましょう。ただし、特定の条件（例: 円のX座標が中央より左なら赤、右なら青）で色を変えるように、**条件分岐（if文）**を使ってください。</p>
+            <canvas id="canvas2" width="400" height="200"></canvas>
+            <div class="hint">
+                <h3>ヒント</h3>
+                <ul>
+                    <li><code>ctx.beginPath();</code>で新しいパスを開始します。</li>
+                    <li><code>ctx.arc(x, y, 半径, 開始角度, 終了角度);</code>で円を描きます。（開始角度: 0, 終了角度: Math.PI * 2 で完全な円）</li>
+                    <li><code>ctx.fill();</code>で塗りつぶします。</li>
+                    <li><code>Math.random()</code>で0から1未満の乱数を生成できます。</li>
+                    <li><code>if (条件) { ... } else { ... }</code>で条件分岐ができます。</li>
+                </ul>
+            </div>
+            <button onclick="executeExercise2()">問題2を実行</button>
+            <p id="result2" class="result"></p>
+        </section>
+
+        <section class="exercise-section">
+            <h2>問題3: 繰り返しで星を描こう</h2>
+            <p>以下のキャンバスに、複数の星をランダムな位置に描いてみましょう。**繰り返し（for文）**を使って、10個以上の星を描いてください。</p>
+            <canvas id="canvas3" width="400" height="200"></canvas>
+            <div class="hint">
+                <h3>ヒント</h3>
+                <ul>
+                    <li>星の形を描くのは少し複雑なので、まずは小さな四角形や円を「星」に見立てて描いてみましょう。</li>
+                    <li><code>for (let i = 0; i < 回数; i++) { ... }</code>で繰り返し処理ができます。</li>
+                    <li><code>Math.floor(Math.random() * 最大値)</code>で0から最大値未満の整数を生成できます。</li>
+                </ul>
+            </div>
+            <button onclick="executeExercise3()">問題3を実行</button>
+            <p id="result3" class="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 JavaScript Exercises</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

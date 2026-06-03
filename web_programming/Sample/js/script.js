@@ -98,8 +98,8 @@ function drawCanvasText(text) {
     // テキストの色を設定
     ctx.fillStyle = '#333';
     // テキストの位置を中央揃えに
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
+    ctx.textAlign = 'center';　//左右
+    ctx.textBaseline = 'middle';　//上下
 
     // テキストを描画
     // fillText(テキストの内容, x座標, y座標)
