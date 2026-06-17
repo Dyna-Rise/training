@@ -15,14 +15,14 @@ function executeExercise1() {
 
     // 1. 四角形の色を変数で宣言してみよう
     //    例: let fillColor = "red";
-    let fillColor = "blue"; // ← ここに好きな色を設定してください
+    let fillColor = ; // ← ここに好きな色を設定してください
 
     // 2. 四角形のX座標、Y座標、幅、高さを変数で宣言してみよう
     //    例: let rectX = 50;
-    let rectX = 100;    // ← ここにX座標を設定してください
-    let rectY = 50;     // ← ここにY座標を設定してください
-    let rectWidth = 150; // ← ここに幅を設定してください
-    let rectHeight = 80; // ← ここに高さを設定してください
+    let rectX = ;    // ← ここにX座標を設定してください
+    let rectY = ;     // ← ここにY座標を設定してください
+    let rectWidth = ; // ← ここに幅を設定してください
+    let rectHeight = ; // ← ここに高さを設定してください
 
     // 3. 宣言した変数を使って、四角形を描画してみよう
     ctx.fillStyle = fillColor;
@@ -55,11 +55,10 @@ function executeExercise2() {
 
     // 2. もしも円のX座標がCanvasの中心より左なら色を"red"に、そうでなければ"green"に設定してみよう
     let circleColor;
-    if (circleX < canvas.width / 3){
-        circleColor = "red";
-    } // ← 条件が真の時に実行されるコード
-    else {
-        circleColor = "green";
+    if (circleX < canvas.width / 2) { // ← ここに条件を書いてみよう
+        ; // ← 条件が真の時に実行されるコード
+    }  {
+        ; // ← 条件が偽の時に実行されるコード
     }
 
     // ------------------------------------------------------------------
@@ -88,10 +87,10 @@ function executeExercise3() {
     // ------------------------------------------------------------------
 
     // 1. 何回繰り返すかを決める変数を宣言してみよう
-    let numberOfStars = 100; // ← ここに星の数を設定してください
+    let numberOfStars = ; // ← ここに星の数を設定してください
 
     // 2. for文を使って、指定した回数だけ星（小さな四角形や円）を描いてみよう
-    for (let i = 0; i < numberOfStars; i++) { // ← ここを完成させてみよう
+    for () { // ← ここを完成させてみよう
         // 星のランダムな位置とサイズ、色を変数で決める
         let starX = Math.random() * canvas.width;
         let starY = Math.random() * canvas.height;
